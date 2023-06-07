@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
+import { Fields } from './ContactForm.styled';
 
 export class ContactForm extends Component {
   state = {
@@ -28,7 +30,7 @@ export class ContactForm extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <h2>Phone Book</h2>
-        <div>
+        <Fields>
             
           <label htmlFor="">Name</label>
           <input
@@ -51,8 +53,13 @@ export class ContactForm extends Component {
           />
 
           <button type="submit">Add Contact</button>
-        </div>
+        </Fields>
       </form>
     );
   }
 }
+
+
+ContactForm.propTypes = {
+  getUserContact: PropTypes.func.isRequired,
+};

@@ -49,7 +49,7 @@ export class App extends Component {
       contact.name.toLowerCase().includes(filter.toLowerCase())
     );
     return (
-      <div>
+      <div style={{ padding: '36px' }}>
         <ContactForm getUserContact={this.getUserContact} />
         <FilterInput value={filter} onChange={this.handleFilterChange} />
         <ContactList
