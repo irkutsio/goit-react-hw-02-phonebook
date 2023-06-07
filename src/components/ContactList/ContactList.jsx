@@ -3,20 +3,17 @@ import { Contact } from 'components/Contact/Contact';
 
 export const ContactList = ({ userContact, deleteContact }) => {
   return (
-    <div>
-      <h3>Contacts</h3>
-      <ul>
-        {userContact.map(({ id, name, number }) => (
-          <Contact
-            key={id}
-            id={id}
-            name={name}
-            number={number}
-            deleteContact={deleteContact}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul>
+      {userContact.map(({ id, name, number }) => (
+        <Contact
+          key={id}
+          id={id}
+          name={name}
+          number={number}
+          deleteContact={deleteContact}
+        />
+      ))}
+    </ul>
   );
 };
 

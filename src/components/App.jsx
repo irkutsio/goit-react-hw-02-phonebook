@@ -50,7 +50,9 @@ export class App extends Component {
     );
     return (
       <div style={{ padding: '36px' }}>
+        <h1>Phonebook</h1>
         <ContactForm getUserContact={this.getUserContact} />
+        <h2>Contacts</h2>
         <FilterInput value={filter} onChange={this.handleFilterChange} />
         <ContactList
           userContact={filteredContacts}
