@@ -9,7 +9,6 @@ export const Contact = ({ id, name, number, deleteContact }) => {
       <button
         type="button"
         onClick={() => {
-          console.log('Delete button clicked');
           deleteContact(id);
         }}
       >

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const UserContact = styled.li`
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 500px;
   margin-bottom: 8px;
 gap: 16px;
 
